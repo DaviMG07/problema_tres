@@ -56,7 +56,7 @@ mux_4_2_1(e_hz, a_hz, g_hz, g_hz, count_0_7, matrix_clock);
 dual_counter_0_7(matrix_clock, matrix_direction, , , count_0_7);
 decoder_rows(blink, count_0_7, rows);
 
-encoder_water_box(count_0_7, water_box);
+encoder_water_box(matrix_direction, count_0_7, water_box);
 
 // display decoders
 decoder_dozens(dozens, seg_dozens);
