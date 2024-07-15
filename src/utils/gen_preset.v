@@ -7,6 +7,7 @@ module gen_preset(
 );
 
 wire [5:0] aux;
+wire [2:0] x;
 
 /*
 

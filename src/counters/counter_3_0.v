@@ -5,7 +5,7 @@ module counter_3_0(
     input [1:0] reset,
     output [1:0] count
 );
-
+wire [1:0] T;
 and(clock, clock_in, !end_condition);
 
 flip_flop_T(clock, T[0], preset[0], reset[0], count[0]);

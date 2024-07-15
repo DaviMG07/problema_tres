@@ -41,6 +41,7 @@ z1 = p' · x1
 z2 = p' · x2
 z3 = p' · x3
 */
+wire [3:0] x, y, z;
 
 and(x[0], !count[2], !count[1]);
 and(x[1], !count[2], count[1]);

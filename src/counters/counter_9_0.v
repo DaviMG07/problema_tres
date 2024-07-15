@@ -8,6 +8,7 @@ module counter_9_0(
 
 wire clock;
 wire [4:0] aux;
+wire [3:0] T;
 
 and(clock, clock_in, !end_condition);
 
