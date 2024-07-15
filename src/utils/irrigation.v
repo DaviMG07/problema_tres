@@ -9,6 +9,7 @@ module irrigation(
 );
 
 wire medium_level, empty;
+wire [2:0] aux;
 
 and(medium_level, water_box[1], !water_box[0]);
 and(empty, !water_box[1], !water_box[0]);

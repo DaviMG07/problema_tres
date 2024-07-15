@@ -3,6 +3,8 @@ module decoder_units(
     output [7:0] segments
 );
 
+wire [16:0] aux;
+
 /*
 segments[0] = a
 segments[1] = b

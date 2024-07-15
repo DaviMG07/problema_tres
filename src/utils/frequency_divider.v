@@ -3,8 +3,11 @@ module frequency_divider(
     output a_hz,
     output g_hz,
     output e_hz,
-    output one_hz
+    output one_hz,
+    output blink
 );
+
+wire [3:0] aux;
 // clock = 420 Hz
 divider_by_two(clock_840, clock);
 
@@ -31,5 +34,7 @@ divider_by_ten(aux[3], e_hz);
 
 // 1 Hz
 divider_by_two(aux[2], one_hz);
+
+assign blink = aux[3];
 
 endmodule

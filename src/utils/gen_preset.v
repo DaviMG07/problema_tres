@@ -6,6 +6,8 @@ module gen_preset(
     output [5:0] reset
 );
 
+wire [5:0] aux;
+
 /*
 
 | pulse | state | specific | preset |

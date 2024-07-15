@@ -5,6 +5,8 @@ module encoder_irrigation(
     output [1:0] irrigation_type
 );
 
+wire [1:0] aux;
+
 // R0 = A . G'
 and(irrigation_type[0], sprinkler, !drip);
 
